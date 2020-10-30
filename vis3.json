@@ -49,9 +49,9 @@
   "hconcat":[{
   "mark": "circle",
   "encoding": {
-    "x": {"field": "Total-expenditure", "type": "quantitative", "scale":{"type": "",
+    "y": {"field": "Total-expenditure", "type": "quantitative", "scale":{"type": "",
 "domain":[1,20]}, "axis":{"tickCount": 10}},
-    "y": {"field": "Diphtheria", "type": "quantitative", "axis": {"tickCount":20}},
+    "x": {"field": "Diphtheria", "type": "quantitative", "axis": {"tickCount":20}},
     "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths"},
     "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Diphtheria", "type": "quantitative", "title": "% Immunized"},{"field": "underfivedeaths", "type": "quantitative"}],
     "opacity": {"value": 0.3}
@@ -59,9 +59,9 @@
   {
   "mark": "circle",
   "encoding": {
-    "x": {"field": "Total-expenditure", "type": "quantitative", "scale":{"type": "",
+    "y": {"field": "Total-expenditure", "type": "quantitative", "scale":{"type": "",
 "domain":[1,20]}, "axis":{"tickCount": 10}},
-    "y": {"field": "Polio", "type": "quantitative", "axis": {"tickCount":20}},
+    "x": {"field": "Polio", "type": "quantitative", "axis": {"tickCount":20}},
     "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths"},
     "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Diphtheria", "type": "quantitative", "title": "% Immunized"},{"field": "underfivedeaths", "type": "quantitative"}],
     "opacity": {"value": 0.3}
@@ -69,9 +69,9 @@
   {
   "mark": "circle",
   "encoding": {
-    "x": {"field": "Total-expenditure", "type": "quantitative", "scale":{"type": "",
+    "y": {"field": "Total-expenditure", "type": "quantitative", "scale":{"type": "",
 "domain":[1,20]}, "axis":{"tickCount": 10}},
-    "y": {"field": "Hepatitis-B", "type": "quantitative", "axis": {"tickCount":20}},
+    "x": {"field": "Hepatitis-B", "type": "quantitative", "axis": {"tickCount":20}},
     "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths"},
     "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Diphtheria", "type": "quantitative", "title": "% Immunized"},{"field": "underfivedeaths", "type": "quantitative"}],
     "opacity": {"value": 0.3}
