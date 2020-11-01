@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 500,
   "height": 400,
-  "description": "A bubbleplot showing horsepower on x, miles per gallons on y, and binned acceleration on size.",
+  "description": "A map about life expectency according to the World Health Organisation.",
   "data": {"url": "https://raw.githubusercontent.com/zydrux/FIT3179-Assignment-2/main/testing2.csv", "format":{ "type": "csv"}},
   "params": [
     {
