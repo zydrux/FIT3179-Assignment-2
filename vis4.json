@@ -36,20 +36,90 @@
     {"filter": "datum.Incomecompositionofresources", "gt": 0}
   ], 
   "hconcat":[{
+    "layer":[{
   "mark": {"type":"circle"},
   "encoding": {
     "y": {"field": "thinness-5-9", "type": "quantitative", "axis":{"tickCount": 10}, "title": "% thinness in 5-9 Year Olds"},
     "x": {"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index"},
-    "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index"},{"field": "thinness-5-9", "type": "quantitative"}],
+    "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index"},{"field": "thinness-5-9", "type": "quantitative", "title": "Thinness in 5-9 y/o"}],
     "opacity": {"value": 0.4}
-  }},{
-  "mark": {"type":"circle","color": "red"},
+  }},
+  {"mark": {
+        "type": "text",
+        "fontStyle": "italic",
+        "fontSize": 11.5,
+        "align": "right",
+        "baseline": "middle",
+        "dx": 10,
+        "dy": -90
+      },
+      "transform": [
+        {"filter": "datum.Country == 'India'"}
+      ],
+      "encoding": {
+        "text": {"field": "Country"}
+      }
+
+  },
+  {"mark": {
+        "type": "text",
+        "fontStyle": "italic",
+        "fontSize": 11.5,
+        "align": "right",
+        "baseline": "middle",
+        "dx": -40,
+        "dy": 30
+      },
+      "transform": [
+        {"filter": "datum.Country == 'Niger'"}
+      ],
+      "encoding": {
+        "text": {"field": "Country"}
+      }
+
+  }]},{
+    "layer":[{
+  "mark": {"type":"circle", "color": "red"},
   "encoding": {
     "y": {"field": "thinness-1-19", "type": "quantitative", "axis":{"tickCount": 10}, "title": "% thinness in 10-19 Year Olds"},
-    "x": {"field": "Incomecompositionofresources", "type": "quantitative", "domain":[0,1], "title": "Human Development Index"},
-    "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index"},{"field": "thinness-1-19", "type": "quantitative"}],
+    "x": {"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index"},
+    "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index"},{"field": "thinness-1-19", "type": "quantitative", "title": "Thinness in 5-9 y/o"}],
     "opacity": {"value": 0.4}
-  }}
+  }},
+  {"mark": {
+        "type": "text",
+        "fontStyle": "italic",
+        "fontSize": 11.5,
+        "align": "right",
+        "baseline": "middle",
+        "dx": 10,
+        "dy": -90
+      },
+      "transform": [
+        {"filter": "datum.Country == 'India'"}
+      ],
+      "encoding": {
+        "text": {"field": "Country"}
+      }
+
+  },
+  {"mark": {
+        "type": "text",
+        "fontStyle": "italic",
+        "fontSize": 11.5,
+        "align": "right",
+        "baseline": "middle",
+        "dx": -40,
+        "dy": 30
+      },
+      "transform": [
+        {"filter": "datum.Country == 'Niger'"}
+      ],
+      "encoding": {
+        "text": {"field": "Country"}
+      }
+
+  }]}
   ],
   "resolve": {"scale": {"color": "independent"}}
 }
