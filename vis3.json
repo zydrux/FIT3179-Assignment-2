@@ -47,32 +47,136 @@
     {"filter": "datum.underfivedeaths <= max_percentage"}
   ], 
   "hconcat":[{
+    "layer":[{
   "mark": "circle",
   "encoding": {
-    "y": {"field": "Total-expenditure", "type": "quantitative", "scale":{"domain":[1,20]}, "axis":{"tickCount": 10}},
-    "x": {"field": "Diphtheria", "type": "quantitative", "axis": {"tickCount":20}},
-    "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths"},
-    "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Diphtheria", "type": "quantitative", "title": "% Immunized"},{"field": "underfivedeaths", "type": "quantitative"}],
+    "y": {"field": "Total-expenditure", "type": "quantitative", "scale":{"domain":[1,20]}, "axis":{"tickCount": 10}, "title": "% govt money towards health"},
+    "x": {"field": "Diphtheria", "type": "quantitative", "axis": {"tickCount":20}, "title": "% Diphtheria Vaccinations"},
+    "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths", "title": "Death of kids under 5 per 1000"},
+    "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Diphtheria", "type": "quantitative", "title": "% Immunized"},{"field": "underfivedeaths", "type": "quantitative", "title": "Deaths of kids under 5 per 1000 population"}],
     "opacity": {"value": 0.3}
   }},
+  {"mark": {
+        "type": "text",
+        "fontStyle": "italic",
+        "fontSize": 11.5,
+        "align": "right",
+        "baseline": "middle",
+        "dx": 80,
+        "dy": -70
+      },
+      "transform": [
+        {"filter": "datum.Country == 'United States of America'"}
+      ],
+      "encoding": {
+        "text": {"field": "Country"}
+      }
+
+  },
+  {"mark": {
+        "type": "text",
+        "fontStyle": "italic",
+        "fontSize": 11.5,
+        "align": "right",
+        "baseline": "middle",
+        "dx": 10,
+        "dy": 15
+      },
+      "transform": [
+        {"filter": "datum.Country == 'Afghanistan'"}
+      ],
+      "encoding": {
+        "text": {"field": "Country"}
+      }
+
+  }]},
   {
-  "mark": {"type":"circle","color": "red"},
+    "layer":[{
+  "mark": {"type":"circle", "color": "red"},
   "encoding": {
-    "y": {"field": "Total-expenditure", "type": "quantitative", "scale":{"domain":[1,20]}, "axis":{"tickCount": 10}},
-    "x": {"field": "Polio", "type": "quantitative", "axis": {"tickCount":20}},
-    "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths"},
-    "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Diphtheria", "type": "quantitative", "title": "% Immunized"},{"field": "underfivedeaths", "type": "quantitative"}],
-    "config":{"fill": "#ffbf00"},
+    "y": {"field": "Total-expenditure", "type": "quantitative", "scale":{"domain":[1,20]}, "axis":{"tickCount": 10}, "title": "% govt money towards health"},
+    "x": {"field": "Hepatitis-B", "type": "quantitative", "axis": {"tickCount":20}, "title": "% Hepatitis B Vaccinations"},
+    "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths", "title": "Death of kids under 5 per 1000"},
+    "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Diphtheria", "type": "quantitative", "title": "% Immunized"},{"field": "underfivedeaths", "type": "quantitative", "title": "Deaths of kids under 5 per 1000 population"}],
     "opacity": {"value": 0.3}
   }},
+  {"mark": {
+        "type": "text",
+        "fontStyle": "italic",
+        "fontSize": 11.5,
+        "align": "right",
+        "baseline": "middle",
+        "dx": 70,
+        "dy": -70
+      },
+      "transform": [
+        {"filter": "datum.Country == 'United States of America'"}
+      ],
+      "encoding": {
+        "text": {"field": "Country"}
+      }
+
+  },
+  {"mark": {
+        "type": "text",
+        "fontStyle": "italic",
+        "fontSize": 11.5,
+        "align": "right",
+        "baseline": "middle",
+        "dx": 10,
+        "dy": 15
+      },
+      "transform": [
+        {"filter": "datum.Country == 'Afghanistan'"}
+      ],
+      "encoding": {
+        "text": {"field": "Country"}
+      }
+
+  }]},
   {
-  "mark": {"type":"circle","color": "green"},
+    "layer":[{
+  "mark": {"type":"circle", "color": "green"},
   "encoding": {
-    "y": {"field": "Total-expenditure", "type": "quantitative", "scale":{"domain":[1,20]}, "axis":{"tickCount": 10}},
-    "x": {"field": "Hepatitis-B", "type": "quantitative", "axis": {"tickCount":20}},
-    "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths"},
-    "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Diphtheria", "type": "quantitative", "title": "% Immunized"},{"field": "underfivedeaths", "type": "quantitative"}],
+    "y": {"field": "Total-expenditure", "type": "quantitative", "scale":{"domain":[1,20]}, "axis":{"tickCount": 10}, "title": "% govt money towards health"},
+    "x": {"field": "Polio", "type": "quantitative", "axis": {"tickCount":20}, "title": "% Polio Vaccinations"},
+    "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths", "title": "Death of kids under 5 per 1000"},
+    "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Diphtheria", "type": "quantitative", "title": "% Immunized"},{"field": "underfivedeaths", "type": "quantitative", "title": "Deaths of kids under 5 per 1000 population"}],
     "opacity": {"value": 0.3}
-  }}],
+  }},
+  {"mark": {
+        "type": "text",
+        "fontStyle": "italic",
+        "fontSize": 11.5,
+        "align": "right",
+        "baseline": "middle",
+        "dx": 70,
+        "dy": -70
+      },
+      "transform": [
+        {"filter": "datum.Country == 'United States of America'"}
+      ],
+      "encoding": {
+        "text": {"field": "Country"}
+      }
+
+  },
+  {"mark": {
+        "type": "text",
+        "fontStyle": "italic",
+        "fontSize": 11.5,
+        "align": "right",
+        "baseline": "middle",
+        "dx": 5,
+        "dy": 15
+      },
+      "transform": [
+        {"filter": "datum.Country == 'Afghanistan'"}
+      ],
+      "encoding": {
+        "text": {"field": "Country"}
+      }
+
+  }]}],
   "resolve": {"scale": {"color": "independent"}}
 }
