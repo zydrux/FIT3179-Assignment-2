@@ -71,7 +71,7 @@
           <div class="description description-left">
             <h2>World Map</h2>
               <p>This map is for you to look around at each country to have a look at data based on it. 
-                The luminance changes based on life expectancy, and the legend chagnes based on whether you want to see developing countries or developed countries.
+                The luminance changes based on life expectancy, and the legend changes based on whether you want to see developing countries or developed countries.
                 Countries that are gray are either not included in the data or arent apart of the selected country status. </p>
           </div>
         </div>
@@ -111,6 +111,21 @@
         </div>
     </div>
    
+   <div class="pure-g">
+      <div class="pure-u-1">
+          <div class="description description-right">
+            <h2>Schooling</h2>
+            <p>This map shows a heat map of average amount of years each country spends in schooling. The luminance changes based on amount of years, and the legend changes based on whether you want to see developing countries or developed countries.
+                Countries that are gray are either not included in the data or arent apart of the selected country status. It can be noticed that the years in school and the map above about life expectancy have a visual relation that countries that have higher life expectancy, also happen to have higher years spent in school.</p>
+        </div>
+        </div>
+        <div class="pure-u-1">
+          <div id="vis4"  class="vis-container"></div>
+      </div>
+      
+    </div>
+   
+   
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">
         <p>This visualisation is created by <a href="https://github.com/zydrux" target="_blank">Alex Green</a>. The datasource is <a href="https://www.kaggle.com/kumarajarshi/life-expectancy-who" target="_blank">some data repository online</href>.</p>
@@ -136,7 +151,7 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
-  vegaEmbed('#vis4', specVis2, {"actions": false}).then(function(result) {
+  vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
