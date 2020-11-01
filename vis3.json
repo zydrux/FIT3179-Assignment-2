@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 400,
+  "width": 300,
   "height": 400,
   "description": "A bubbleplot showing horsepower on x, miles per gallons on y, and binned acceleration on size.",
   "data": {"url": "https://raw.githubusercontent.com/zydrux/FIT3179-Assignment-2/main/testing2.csv", "format":{ "type": "csv"}},
