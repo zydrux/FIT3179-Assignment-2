@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 300,
+  "width": 500,
   "height": 400,
   "description": "A bubbleplot showing horsepower on x, miles per gallons on y, and binned acceleration on size.",
   "data": {"url": "https://raw.githubusercontent.com/zydrux/FIT3179-Assignment-2/main/testing2.csv", "format":{ "type": "csv"}},
@@ -13,7 +13,7 @@
         "min": 0,
         "max": 100,
         "step": 1,
-        "name": "Under 5 Deaths"
+        "name": "Death of kids under 5 per 1000"
       }
     },
     {
@@ -52,7 +52,7 @@
   "encoding": {
     "y": {"field": "Total-expenditure", "type": "quantitative", "scale":{"domain":[1,20]}, "axis":{"tickCount": 10}, "title": "% govt money towards health"},
     "x": {"field": "Diphtheria", "type": "quantitative", "axis": {"tickCount":20}, "title": "% Diphtheria Vaccinations"},
-    "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths", "title": "Death of kids under 5 per 1000"},
+    "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths", "title": "Under 5 Deaths"},
     "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Diphtheria", "type": "quantitative", "title": "% Immunized"},{"field": "underfivedeaths", "type": "quantitative", "title": "Deaths of kids under 5 per 1000 population"}],
     "opacity": {"value": 0.3}
   }},
@@ -96,7 +96,7 @@
   "encoding": {
     "y": {"field": "Total-expenditure", "type": "quantitative", "scale":{"domain":[1,20]}, "axis":{"tickCount": 10}, "title": "% govt money towards health"},
     "x": {"field": "Hepatitis-B", "type": "quantitative", "axis": {"tickCount":20}, "title": "% Hepatitis B Vaccinations"},
-    "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths", "title": "Death of kids under 5 per 1000"},
+    "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths", "title": "Under 5 Deaths"},
     "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Diphtheria", "type": "quantitative", "title": "% Immunized"},{"field": "underfivedeaths", "type": "quantitative", "title": "Deaths of kids under 5 per 1000 population"}],
     "opacity": {"value": 0.3}
   }},
@@ -140,7 +140,7 @@
   "encoding": {
     "y": {"field": "Total-expenditure", "type": "quantitative", "scale":{"domain":[1,20]}, "axis":{"tickCount": 10}, "title": "% govt money towards health"},
     "x": {"field": "Polio", "type": "quantitative", "axis": {"tickCount":20}, "title": "% Polio Vaccinations"},
-    "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths", "title": "Death of kids under 5 per 1000"},
+    "size": {"field": "underfivedeaths", "type": "quantitative", "title": "Under 5 Deaths", "title": "Under 5 Deaths"},
     "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Diphtheria", "type": "quantitative", "title": "% Immunized"},{"field": "underfivedeaths", "type": "quantitative", "title": "Deaths of kids under 5 per 1000 population"}],
     "opacity": {"value": 0.3}
   }},
