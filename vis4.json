@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 500,
+  "height": 400,
+  "description": "A bubbleplot showing horsepower on x, miles per gallons on y, and binned acceleration on size.",
+  "data": {"url": "https://raw.githubusercontent.com/zydrux/FIT3179-Assignment-2/main/testing2.csv", "format":{ "type": "csv"}},
+  "params": [
+    {
+      "name": "continent_selection",
+      "bind": {
+        "input": "select",
+        "labels": [
+          "Show All",
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "options": [
+          null,
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "name": "Select Continent"
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.Continent == continent_selection || continent_selection == null"},
+    {"filter": "datum.Incomecompositionofresources", "gt": 0}
+  ], 
+  "hconcat":[{
+  "mark": {"type":"circle"},
+  "encoding": {
+    "y": {"field": "thinness-5-9", "type": "quantitative", "axis":{"tickCount": 10}, "title": "% thinness in 5-9 Year Olds"},
+    "x": {"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index (out of 1)"},
+    "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index"},{"field": "thinness-5-9", "type": "quantitative"}],
+    "opacity": {"value": 0.4}
+  }},{
+  "mark": {"type":"circle","color": "red"},
+  "encoding": {
+    "y": {"field": "thinness-1-19", "type": "quantitative", "axis":{"tickCount": 10}, "title": "% thinness in 10-19 Year Olds"},
+    "x": {"field": "Incomecompositionofresources", "type": "quantitative", "domain":[0,1], "title": "Human Development Index (out of 1)"},
+    "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index"},{"field": "thinness-1-19", "type": "quantitative"}],
+    "opacity": {"value": 0.4}
+  }}
+  ],
+  "resolve": {"scale": {"color": "independent"}}
+}
