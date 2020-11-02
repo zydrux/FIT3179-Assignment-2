@@ -39,7 +39,7 @@
     "layer":[{
   "mark": {"type":"circle"},
   "encoding": {
-    "y": {"field": "thinness-5-9", "type": "quantitative", "axis":{"tickCount": 10}, "title": "% thinness in 5-9 Year Olds"},
+    "y": {"field": "thinness-5-9", "type": "quantitative", "axis":{"tickCount": 10}, "scale":{"domain":[1,28]}, "title": "% thinness in 5-9 Year Olds"},
     "x": {"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index"},
     "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index"},{"field": "thinness-5-9", "type": "quantitative", "title": "Thinness in 5-9 y/o"}],
     "opacity": {"value": 0.4}
@@ -81,7 +81,7 @@
     "layer":[{
   "mark": {"type":"circle", "color": "red"},
   "encoding": {
-    "y": {"field": "thinness-1-19", "type": "quantitative", "axis":{"tickCount": 10}, "title": "% thinness in 10-19 Year Olds"},
+    "y": {"field": "thinness-1-19", "type": "quantitative", "axis":{"tickCount": 10}, "scale":{"domain":[1,28]}, "title": "% thinness in 10-19 Year Olds"},
     "x": {"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index"},
     "tooltip":[{"field": "Country", "type": "nominal"},{"field": "Incomecompositionofresources", "type": "quantitative", "title": "Human Development Index"},{"field": "thinness-1-19", "type": "quantitative", "title": "Thinness in 10-19 y/o"}],
     "opacity": {"value": 0.4}
