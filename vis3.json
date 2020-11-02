@@ -7,7 +7,7 @@
   "params": [
     {
       "name": "max_percentage",
-      "value": 100,
+      "value": 1,
       "bind": {
         "input": "range",
         "min": 1,
