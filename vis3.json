@@ -44,7 +44,7 @@
   ],
   "transform": [
     {"filter": "datum.Continent == continent_selection || continent_selection == null"},
-    {"filter": "datum.underfivedeaths <= max_percentage"}
+    {"filter": "datum.underfivedeaths >= max_percentage"}
   ], 
   "hconcat":[{
     "layer":[{
